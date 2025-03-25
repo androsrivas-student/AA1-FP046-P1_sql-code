@@ -1,0 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Highlighted with Carbon</title>
+</head>
+<body style="margin:0;padding:0;">
+<iframe src="https://carbon.now.sh/embed?bg=white&theme=base16-light&fontFamily=Fira%20Code&fontSize=14px&lineNumbers=true&code=%0A--%20Para%20facilitar%20la%20lectura%20y%20por%20comodidad%2C%20se%20han%20obviado%20las%20operaciones%20INSERT.%0A%0A--%20Quitar%20la%20proteccion%20de%20las%20claves%20foraneas%0ASET%20FOREIGN_KEY_CHECKS%20%3D%200%3B%0A%0A--%20Category.sql%0ADROP%20TABLE%20IF%20EXISTS%20%60category%60%3B%0ACREATE%20TABLE%20%60category%60%20%28%0A%20%20%60catid%60%20smallint%20NOT%20NULL%20COMMENT%20%27Clave%20primaria%2C%20un%20valor%20de%20ID%20%C3%BAnico%20para%20cada%20fila.%20Cada%20fila%20representa%20un%20tipo%20de%20evento%20espec%C3%ADfico%20para%20el%20cual%20se%20compran%20y%20venden%20tickets.%27%2C%0A%20%20%60catgroup%60%20varchar%2810%29%20DEFAULT%20NULL%20COMMENT%20%27Nombre%20descriptivo%20de%20un%20grupo%20de%20eventos%2C%20como%20Shows%20y%20Sports.%27%2C%0A%20%20%60catname%60%20varchar%2810%29%20DEFAULT%20NULL%20COMMENT%20%27Nombre%20descriptivo%20abreviado%20de%20un%20tipo%20de%20eventos%20en%20un%20grupo%2C%20como%20Opera%20y%20Musicals.%27%2C%0A%20%20%60catdesc%60%20varchar%2850%29%20DEFAULT%20NULL%20COMMENT%20%27Nombre%20descriptivo%20m%C3%A1s%20largo%20del%20tipo%20de%20evento%2C%20como%20Musical%20theatre.%27%2C%0A%20%20PRIMARY%20KEY%20%28%60catid%60%29%0A%29%20ENGINE%3DInnoDB%20DEFAULT%20CHARSET%3Dutf8mb4%20COLLATE%3Dutf8mb4_0900_ai_ci%3B%0ALOCK%20TABLES%20%60category%60%20WRITE%3B%0A/%2A%2140000%20ALTER%20TABLE%20%60category%60%20DISABLE%20KEYS%20%2A/%3B%0A%0A--%20Aqu%C3%AD%20aniria%20la%20resta%20del%20codi...%0A"
+  style="width:100%; height:1200px; border:0; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" 
+  loading="lazy"></iframe>
+</body>
+</html>
